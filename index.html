@@ -1,33 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athirah Ilyana Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#94a3b8;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.about{
+    text-align:center;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Hi, I'm Tira 👋</h1>
+<header>
+    <h1>Athirah Ilyana</h1>
+    <p>QA Tester | Software Testing | Data Analytics</p>
 
-    <p>Student | Data Mining | Software Learner</p>
+    <a href="https://github.com/YOUR_USERNAME" class="btn">
+        View GitHub
+    </a>
+</header>
 
-    <h2>About Me</h2>
-    <p>I am interested in data mining, automation, and building simple applications.</p>
+<section>
+    <h2 class="section-title">About Me</h2>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>Selenium</li>
-        <li>Basic HTML</li>
-        <li>Data Analysis</li>
-    </ul>
+    <div class="about">
+        <p>
+            Passionate QA Tester and Data Analytics student with experience
+            in manual testing, regression testing, bug reporting, KNIME,
+            Python, SQL, and dashboard development.
+        </p>
+    </div>
+</section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Health Screening Automation (Selenium)</li>
-        <li>GreenBinGo App (FYP)</li>
-    </ul>
+<section>
+    <h2 class="section-title">Skills</h2>
 
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <div class="skills">
+        <div class="skill">Manual Testing</div>
+        <div class="skill">Regression Testing</div>
+        <div class="skill">Bug Reporting</div>
+        <div class="skill">JIRA</div>
+        <div class="skill">KNIME</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Streamlit</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Student Performance Analytics</h3>
+            <p>
+                Performed data cleaning, preprocessing,
+                descriptive analysis, and visualization
+                using KNIME.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Hotel Review Sentiment Analysis</h3>
+            <p>
+                Developed a Streamlit dashboard for
+                sentiment and emotion analysis using
+                machine learning models.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>QA Testing Internship</h3>
+            <p>
+                Created test cases, executed regression
+                testing, reported defects, and verified
+                bug fixes for web and mobile applications.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+        <p>Email: your_email@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Athirah Ilyana. All Rights Reserved.
+</footer>
 
 </body>
 </html>
