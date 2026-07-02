@@ -1,1 +1,412 @@
+/* ===============================
+   GOOGLE FONT
+================================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#141414;
+    color:#fff;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:20px 70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:100;
+
+    background:linear-gradient(to bottom,
+    rgba(0,0,0,.9),
+    transparent);
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#E50914;
+
+}
+
+.logo span{
+
+    color:white;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#E50914;
+
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 70px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(20,20,20,1)),
+
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.overlay{
+
+    max-width:650px;
+
+}
+
+.subtitle{
+
+    color:#E50914;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.description{
+
+    color:#d4d4d4;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.play{
+
+    background:#fff;
+
+    color:black;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.info{
+
+    background:rgba(109,109,110,.7);
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.play:hover,
+.info:hover{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+
+/* ===============================
+   SECTION
+================================= */
+
+.section{
+
+    padding:60px 70px;
+
+}
+
+.section h2{
+
+    margin-bottom:25px;
+
+}
+
+/* ===============================
+   CARDS
+================================= */
+
+.cards{
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+}
+
+.card{
+
+    min-width:280px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:scale(1.08);
+
+}
+
+.thumbnail{
+
+    height:160px;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#E50914,#7F1D1D);
+
+}
+
+.card h3{
+
+    margin-top:15px;
+
+}
+
+/* ===============================
+   TAGS
+================================= */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.tags span{
+
+    background:#222;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    transition:.3s;
+
+}
+
+.tags span:hover{
+
+    background:#E50914;
+
+}
+
+/* ===============================
+   FEATURED
+================================= */
+
+.featured{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.featured-image{
+
+    height:350px;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#E50914,#111);
+
+}
+
+.featured-content h3{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.featured-content p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.featured-content button{
+
+    padding:15px 25px;
+
+    background:#E50914;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:6px;
+
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer{
+
+    text-align:center;
+
+    padding:50px;
+
+    color:#777;
+
+}
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.navbar{
+
+padding:20px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.featured{
+
+grid-template-columns:1fr;
+
+}
+
+.section{
+
+padding:40px 25px;
+
+}
+
+}
