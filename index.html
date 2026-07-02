@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanaFlix | Portfolio</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<title>Athirah Ilyana | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- ================= NAVBAR ================= -->
 
-<nav>
+<header class="navbar">
 
-<div class="logo">
-PortfolioFlix
-</div>
+    <div class="logo">
+        Yana<span>Flix</span>
+    </div>
 
-<ul>
+    <nav>
 
-<li>Home</li>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
 
-<li>Projects</li>
-
-<li>Contact</li>
-
-</ul>
-
-</nav>
-
-<!-- Hero -->
-
-<header class="hero">
-
-<div class="overlay">
-
-<h4>QA TESTING INTERN</h4>
-
-<h1>Athirah Ilyana</h1>
-
-<p>
-
-Building reliable software through
-software testing, data analytics
-and modern technologies.
-
-</p>
-
-<div class="buttons">
-
-<button class="play">
-
-▶ Explore Portfolio
-
-</button>
-
-<button class="more">
-
-Resume
-
-</button>
-
-</div>
-
-</div>
+    </nav>
 
 </header>
 
-<!-- Continue Watching -->
+<!-- ================= HERO ================= -->
 
-<section>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">
+            QA TESTING • DATA ANALYTICS
+        </p>
+
+        <h1>
+            Athirah Ilyana
+        </h1>
+
+        <p class="description">
+
+            Building reliable software through
+            software testing, data analytics
+            and modern technology.
+
+        </p>
+
+        <div class="buttons">
+
+            <button class="btn-primary">
+
+                ▶ Explore Portfolio
+
+            </button>
+
+            <button class="btn-secondary">
+
+                Resume
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTINUE EXPLORING ================= -->
+
+<section id="projects">
 
 <h2>Continue Exploring</h2>
 
-<div class="row">
+<div class="movie-row">
 
-<div class="card">
+<div class="movie-card">
 
-<img src="assets/qa-testing.png">
+<img src="assets/project1.jpg">
 
 <h3>QA Internship</h3>
 
 </div>
 
-<div class="card">
+<div class="movie-card">
 
-<img src="assets/student-performance.png">
+<img src="assets/project2.jpg">
 
 <h3>Student Analytics</h3>
 
 </div>
 
-<div class="card">
+<div class="movie-card">
 
-<img src="assets/sentiment-analysis.png">
+<img src="assets/project3.jpg">
 
 <h3>Sentiment Analysis</h3>
 
 </div>
 
-<div class="card">
+<div class="movie-card">
 
-<img src="assets/profile.png">
+<img src="assets/project4.jpg">
 
-<h3>About Me</h3>
+<h3>Resume</h3>
 
 </div>
 
@@ -118,33 +120,114 @@ Resume
 
 </section>
 
-<!-- Technologies -->
+<!-- ================= TECHNOLOGIES ================= -->
 
-<section>
+<section id="skills">
 
 <h2>Trending Technologies</h2>
 
-<div class="tags">
+<div class="technology">
 
-<span>Python</span>
+<div>Python</div>
 
-<span>SQL</span>
+<div>SQL</div>
 
-<span>KNIME</span>
+<div>KNIME</div>
 
-<span>GitHub</span>
+<div>GitHub</div>
 
-<span>JIRA</span>
+<div>JIRA</div>
 
-<span>Streamlit</span>
+<div>Streamlit</div>
 
-<span>Power BI</span>
+<div>Power BI</div>
 
-<span>Regression Testing</span>
+<div>Regression Testing</div>
 
 </div>
 
 </section>
+
+<!-- ================= FEATURED ================= -->
+
+<section>
+
+<h2>Featured Project</h2>
+
+<div class="featured">
+
+<div class="featured-image">
+
+<img src="assets/project-feature.jpg">
+
+</div>
+
+<div class="featured-info">
+
+<p class="category">
+
+Data Analytics
+
+</p>
+
+<h2>
+
+Hotel Review Sentiment Analysis
+
+</h2>
+
+<p>
+
+A Streamlit dashboard developed to analyse hotel
+reviews using Natural Language Processing (NLP)
+and emotion classification.
+
+</p>
+
+<button>
+
+View Project
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<footer id="contact">
+
+<h2>
+
+Let's Connect
+
+</h2>
+
+<p>
+
+Email :
+your@email.com
+
+</p>
+
+<p>
+
+GitHub :
+github.com/yourusername
+
+</p>
+
+<p>
+
+LinkedIn :
+linkedin.com/in/yourusername
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
